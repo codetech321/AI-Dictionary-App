@@ -57,6 +57,8 @@ lexiai/
 ├── vite.config.js
 └── README.md
 
+🧩 Environment Variables for vercel deployment
+
 | Variable              | Description                                                                                  |
 | --------------------- | -------------------------------------------------------------------------------------------- |
 | `VITE_GOOGLE_API_KEY` | Your Google Gemini API key from [Google AI Studio](https://makersuite.google.com/app/apikey) |

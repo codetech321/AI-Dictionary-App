@@ -1,0 +1,163 @@
+:root {
+  --bg: #111827;
+  --bg-2: #1f2937;
+  --bg-3: #374151;
+  --purple: #9333ea;
+}
+
+body {
+  background-color: var(--bg);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, sans-serif;
+}
+
+/* Headings and text */
+h2 {
+  font-size: 35px !important;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h2 strong {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+p strong {
+  font-size: 20px !important;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Search input box */
+.inputBox {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--bg-3);
+  border-radius: 10px;
+  background-color: var(--bg-2);
+  transition: 0.3s ease;
+}
+
+.inputBox:hover {
+  border-color: var(--purple);
+}
+
+.inputBox input {
+  flex: 1;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* Result container */
+.resultContainer {
+  color: #fff;
+  word-wrap: break-word;
+}
+
+.resultContainer h2,
+.resultContainer h3 {
+  color: var(--purple);
+}
+
+.resultContainer ul {
+  margin-left: 20px;
+}
+
+.resultContainer code {
+  background-color: var(--bg-2);
+  padding: 3px 6px;
+  border-radius: 5px;
+  font-family: monospace;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--bg-2);
+  color: #ccc;
+  text-align: center;
+  font-size: 14px;
+}
+/* Make footer stay at bottom */
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 30px !important;
+  }
+
+  .inputBox input {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .resultContainer {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 26px !important;
+  }
+
+  .inputBox {
+    flex-direction: row;
+    padding: 8px 10px;
+  }
+
+  .inputBox input {
+    font-size: 13px;
+  }
+
+  .footer {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 22px !important;
+  }
+
+  p strong {
+    font-size: 16px !important;
+  }
+
+  .inputBox input {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .footer {
+    font-size: 11px;
+    padding: 8px;
+  }
+}

@@ -1,16 +1,66 @@
-# React + Vite
+🧠 LexiAI — Smart Dictionary App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+LexiAI is an AI-powered dictionary web app built with React and Google Gemini API.
+You can search any English word and get detailed meanings, phonetics, synonyms, and examples in a clean, modern UI.
 
-Currently, two official plugins are available:
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔍 AI Dictionary Search — Get detailed word meanings, definitions, examples, phonetics, and synonyms.
 
-## React Compiler
+⚡ Powered by Google Gemini (GenAI) for accurate and natural language responses.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+💻 Fully Responsive — Works perfectly on desktop, tablet, and mobile.
 
-## Expanding the ESLint configuration
+🧩 Markdown Rendering for well-formatted AI responses.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+| Category               | Tools / Libraries                   |
+| ---------------------- | ----------------------------------- |
+| **Frontend**           | React + Vite                        |
+| **AI Model**           | Google Gemini (via `@google/genai`) |
+| **Styling**            | TailwindCSS + Custom CSS            |
+| **Icons**              | Lucide React                        |
+| **Markdown Rendering** | react-markdown + remark-gfm         |
+| **Loader**             | react-spinners (FadeLoader)         |
+
+⚙️ Installation & Setup
+
+1.Clone the repository
+git clone https://github.com/your-username/lexiai.git
+cd lexiai
+
+2.Install dependencies
+npm install
+
+3.Create a .env file in the project root:
+VITE_GOOGLE_API_KEY=your_google_api_key_here
+
+Make sure you never commit your .env file to GitHub.
+Add it to .gitignore (Vite does this by default).
+
+npm run dev
+
+📁 Folder Structure
+
+lexiai/
+│
+├── src/
+│   ├── components/
+│   │   └── Navbar.jsx
+│   ├── App.jsx
+│   ├── App.css
+│   ├── main.jsx
+│   └── ...
+│
+├── .env
+├── package.json
+├── vite.config.js
+└── README.md
+
+| Variable              | Description                                                                                  |
+| --------------------- | -------------------------------------------------------------------------------------------- |
+| `VITE_GOOGLE_API_KEY` | Your Google Gemini API key from [Google AI Studio](https://makersuite.google.com/app/apikey) |
+
+
+
+
